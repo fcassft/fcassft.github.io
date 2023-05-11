@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FCASS Cost Allocation Solution (FCASSft)</title>
+<meta name="description" content="FCASS Cost Allocation Solution is a simple but powerful MS Windows based Cost Allocation solution that runs standalone, is free to use for educational use, fast to run, minimal install, has reports to trace allocation and rollup results, and can be run from a USB key. ">
+<meta name="keywords" content="FCASSft FCASS Cost Allocation Solution System Program simple standalone free education USB key budget allocation">
+<style>
+body { background-image: url(Gray_Textured.gif); margin-left: 15px; }
+</style>
+</head>
+
+<body>
+<h1 id ="Top"><img src="WELCOME2.bmp" alt="" width="64" height="64">&nbsp;FCASS Cost Allocation Solution (FCASSft)</h1>
+<hr>
+<b>
+<a href="index.html#Information">|  Overview  |</a>
+<a href="index.html#Download">|  Download  |</a>
+<a href="index.html#OtherLinks">|  Other Links  |</A>
+</b>
+<hr>
+<b>Latest Update to Program 26 August 2020 and Documentation 5 September 2021</b><br>
+
+<h2>Summary of Benefits of FCASS</h2>
+1. Standalone Cost Allocation solution including budget allocation with useful set of reports<br>
+2. Provides solution to maintain Cost Allocation Model and Financial data<br>
+3. Simple interfacing using CSV files<br>
+4. Small and very simple installation, can be run from USB key<br>
+5. Quick to start running<br>
+6. Fast <br>
+7. Free to use for Educational usage<br>
+8. Runs on Windows 32 bit and 64 bit from Windows XP and upwards (including Windows 10)<br>
+9. No dependencies on other software<br>
+10. Internet access is NOT required. No information is read from, or sent to internet.<br>
+
+<h2 id="overview">Cost Allocation Architecture</h2>
+<p>Cost Allocation consists of three parts Data Capture, Allocation and Allocation Reporting and Final Reporting.<br>
+FCASS provides a simple Data Capture component (FCASSE editing) and Allocation and Allocation Reporting (FCASSA).<br><br>
+<img src="Overview.jpg" alt="Overview Diagram" width="696" height="205">
+<br><br>
+<b>Data Capture and Maintenance</b><br> 
+The cost allocation solution has four different types of data to be captured or maintained<br>
+a. Dimension data – e.g. Product Hierarchy, Customer Hierarchy, Cost/Profit Centre Hierarchy, General Ledger Account Hierarchy, Resource Hierarchy, Activity Hierarchy, Location Hierarchy<br>
+b. Model Structure – i.e. Stages, Cost Pool Groups, Cost Pools, selection rules<br>
+c. Allocation Rules and Measures – i.e. Allocation Base, Measure Data e.g. number of returns of product<br>
+d. Transaction data – Financial transactions recorded against dimensions<br>
+<br> This function is performed by program FCASSE (FCASS Edit).<br>
+<br>
+<b>Allocation and Allocation Reporting</b><br>
+Using data captured and provided as files, the Cost Allocation and Allocation Reporting sub system runs the cost allocation model and also allocation reports. The allocation reports are used to confirm that the allocation has run successfully and include reports that can show the traceability of the allocation.<br>
+<br>This function is performed by program FCASSA (FCASS Allocation).<br>
+<br>
+<b>Final Reporting</b><br>
+Final Reporting takes the results of the allocation and produces reports in required presentation formats which may include graphics and online drill down capability for management reporting.<br>
+<br>
+FCASS does not provide a solution for this. A cheap solution may be to use an end user reporting solution such as Excel (perhaps with Powerpivot) which uses as input CSV files created by the allocation reports.<br>
+<br>
+
+<hr>
+<H2>FCASSA Reports - Allocation Reports</H2>
+<table>
+<tr><th>Report Number</th><th>Name</th><th>Description</th></tr>
+<tr><td></td><td>Job Report</td><td> shows progress of run</td></tr>
+<tr><td>11</td><td>Dimension Report</td><td>shows all of the records in a dimension with the value of the financial transactions that were selected by that dimension</td></tr>
+<tr><td>12</td><td>Stage Report</td><td>shows the Stages in a Model with their associated Cost Pool Groups and Cost Pools</td></tr>
+<tr><td>13</td><td>Cost Pool Resolution Report</td><td>shows Input Cost Pool Groups with their associated Cost Pools and the order that selection of a financial transactions would occur. It includes the number of financial transactions selected and the value</td></tr>
+<tr><td>14</td><td>Cost Measures Report</td><td>shows all of the Measures (Named Measures and Internally Generated Measures). For Internally Generated Measures it shows the value of each selection</td></tr>
+<tr><td>15</td><td>Cost Pool Report</td><td>shows selected Cost Pools. Can also select reporting of the Value Cube associated with each Cost Pool, Allocation Base used and where the Cost Pool has been used</td></tr>
+<tr><td>16</td><td>Allocation Base Report</td><td>shows the Allocation Bases</td></tr>
+<tr><td>21</td><td>Cost Pool Input Contribution Report</td><td>shows selected Input Cost Pools and what value they distributed to each Final Cost Pool</td></tr>
+<tr><td>22</td><td>Cost Pool Final Contribution Report</td><td>shows selected Final Cost Pools and value they received from each Input Cost Pool</td></tr>
+<tr><td>23</td><td>Trace Forward Report</td><td>shows the allocation traced forward from selected Cost Pools through Allocation Bases and Cost Pools to Final Cost Pools</td></tr>
+<tr><td>24</td><td>Trace Back Report</td><td>shows the allocation traced backward from selected Cost Pools through Allocation Bases and Cost Pools to Input Cost Pools</td></tr>
+<tr><td>25</td><td>Cost Pool Variance Report</td><td>shows selected Cost Pools with their variances</td></tr>
+<tr><td>26</td><td>Rollup Report</td><td>shows a rollup by up to 3 dimensions of selected Value Cubes for a selected number of levels in each selected dimension</td></tr>
+<tr><td>31</td><td>Cost Pool Value Cube Analysis</td><td>shows a list of Cost Pools and information on the size of their Value Cubes</td></tr>
+<tr><td>32</td><td>Extract Selected Transactions</td><td>shows the output from Extract Transactions (report requested by OO 5) filtered by a specific Cost Pool code</td></tr>
+<tr><td>33</td><td>Extract Value Cubes</td><td>shows an extract of the Value Cube for selected Cost Pools. Note this will be very big.</td></tr>
+<tr><td>34</td><td>Extract Dimensions</td><td>shows an extract of Dimensions. Can be useful to gain hierarchy.</td></tr>
+<tr><td>OO,5</td><td>Extract Transactions</td><td>will produce an extract of transactions with the CP code they have been selected into.</td></tr>
+</table>
+<br>
+<b><a href="index.html#Top">TOP</a></b>
+
+<hr>
+<h2 id="Download">Download</h2> 
+<table>
+<tr><td>FCASS Documentation</td><td>&nbsp;5 Sep 2021</td><td>&nbsp;Click on link to download <a href="FCASS%20Doc%20v0.8.1.pdf">FCASS Documentation</a></td><td></td></tr>
+<tr><td>FCASS Software and Sample Data</td><td>&nbsp;26 Aug 2020</td><td>&nbsp;Click on link to download <a href="FCASS%20Install%20v0.7%20and%20Sample.zip">FCASS Software v0.7 and sample data.zip</a></td><td>&nbsp;for Windows XP to Windows 10</td></tr>
+</table>
+<br>
+To install, unzip the zip file and run each of the programs (FCASSE and FCASSE) from the Programs directory in the zip file.<br>
+File "Read This File.txt" in zip file provides some extra information.<br><br>
+
+<b>Contact</b><br> 
+Please contact author acroft@fzipft.com for more information.<br>
+<br><b><a href="index.html#Top">TOP</a></b>
+
+<hr>
+<h2 id="OtherLinks">Other Links</h2>
+<UL>
+<LI><a href="http://www.pearsoned.ca/highered/divisions/virtual_tours/horngren/man_acc/Ch05ManAcc.pdf"> Cost Allocation Notes 1</a>
+</UL>
+<UL>
+<LI><a href="http://www.utm.edu/staff/rkilgore/newwpage/Student%20Powerpoints/horngren_ima16_stppt12.ppt">Cost Allocation Notes 2</a>
+</UL>
+<br><b><a href="index.html#Top">TOP</a></b>
+<br>
+<IMG SRC="/cgi/nph-count?width=6&link=/~acroft/FCASS/index.html">
+<hr> <br>
+</body>
+</html>
