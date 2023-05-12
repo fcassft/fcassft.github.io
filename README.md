@@ -14,4 +14,4 @@ A Cost Accounting Allocation and Reporting engine that runs on Windows
 
 Contact A Croft for further information on fcassft@fzipft.com
 
-Downloadable of the website - documentation and installation files
+Downloadable from the website - documentation and installation files
