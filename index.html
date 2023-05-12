@@ -33,17 +33,17 @@ body { background-image: url(Gray_Textured.gif); margin-left: 15px; }
 10. Internet access is NOT required. No information is read from, or sent to internet.<br>
 
 <h2 id="overview">Cost Allocation Architecture</h2>
-<p>Cost Allocation consists of three parts Data Capture, Allocation and Allocation Reporting and Final Reporting.<br>
+<p>Cost Allocation consists of three parts; Data Capture, Allocation and Allocation Reporting, and Final Reporting.<br>
 FCASS provides a simple Data Capture component (FCASSE editing) and Allocation and Allocation Reporting (FCASSA).<br><br>
 <img src="Overview.jpg" alt="Overview Diagram" width="696" height="205">
 <br><br>
 <b>Data Capture and Maintenance</b><br> 
 The cost allocation solution has four different types of data to be captured or maintained<br>
-a. Dimension data – e.g. Product Hierarchy, Customer Hierarchy, Cost/Profit Centre Hierarchy, General Ledger Account Hierarchy, Resource Hierarchy, Activity Hierarchy, Location Hierarchy<br>
-b. Model Structure – i.e. Stages, Cost Pool Groups, Cost Pools, selection rules<br>
-c. Allocation Rules and Measures – i.e. Allocation Base, Measure Data e.g. number of returns of product<br>
-d. Transaction data – Financial transactions recorded against dimensions<br>
-<br> This function is performed by program FCASSE (FCASS Edit).<br>
+a. Dimension data - e.g. Product Hierarchy, Customer Hierarchy, Cost/Profit Centre Hierarchy, General Ledger Account Hierarchy, Resource Hierarchy, Activity Hierarchy, Location Hierarchy<br>
+b. Model Structure - i.e. Stages, Cost Pool Groups, Cost Pools, Selection rules<br>
+c. Allocation Rules and Measures - i.e. Allocation Base, Measure Data e.g. number of returns of product<br>
+d. Transaction data - Financial transactions recorded against dimensions<br>
+<br> This function is performed by program FCASSE (FCASS Edit) or provided as input files in the correct format.<br>
 <br>
 <b>Allocation and Allocation Reporting</b><br>
 Using data captured and provided as files, the Cost Allocation and Allocation Reporting sub system runs the cost allocation model and also allocation reports. The allocation reports are used to confirm that the allocation has run successfully and include reports that can show the traceability of the allocation.<br>
@@ -76,7 +76,7 @@ FCASS does not provide a solution for this. A cheap solution may be to use an en
 <tr><td>32</td><td>Extract Selected Transactions</td><td>shows the output from Extract Transactions (report requested by OO 5) filtered by a specific Cost Pool code</td></tr>
 <tr><td>33</td><td>Extract Value Cubes</td><td>shows an extract of the Value Cube for selected Cost Pools. Note this will be very big.</td></tr>
 <tr><td>34</td><td>Extract Dimensions</td><td>shows an extract of Dimensions. Can be useful to gain hierarchy.</td></tr>
-<tr><td>OO,5</td><td>Extract Transactions</td><td>will produce an extract of transactions with the CP code they have been selected into.</td></tr>
+<tr><td>OO,5</td><td>Extract Transactions</td><td>will produce an extract of transactions with the Cost Pool code they have been selected into.</td></tr>
 </table>
 <br>
 <b><a href="index.html#Top">TOP</a></b>
@@ -104,7 +104,7 @@ Please contact author acroft@fzipft.com for more information.<br>
 <LI><a href="http://www.utm.edu/staff/rkilgore/newwpage/Student%20Powerpoints/horngren_ima16_stppt12.ppt">Cost Allocation Notes 2</a>
 </UL>
 <UL>
-<LI><a href="https://fzipft.github.io">Fzip Family Tree</a>
+<LI>Another project of mine <a href="https://fzipft.github.io">Fzip Family Tree</a>
 </UL>
 <br><b><a href="index.html#Top">TOP</a></b>
 <br>
